@@ -7,7 +7,7 @@ function functionTwo() {
 }
 
 $(document).ready(function () {
-  $("#btnTest").click(function () {
-    alert('JQUERY TEST');
+  $("#btnEditInfo").click(function () {
+    alert('amaa...blm bulih bussku.inform di wsap group ja dlu');
   });
 });
