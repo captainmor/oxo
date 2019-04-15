@@ -13,12 +13,18 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/plugins/normalize-whitespace/prism-normalize-whitespace.js">
   </script>
 
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/solid.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css">
 
   <!-- Mustard UI -->
   <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -119,9 +125,9 @@
           </tr>
           <tr>
             <td>11</td>
-            <td>OXOPnimbaKToLi</td>
-            <td>0168113653</td>
-            <td>Puma</td>
+            <td>Veroneyy</td>
+            <td>0195365215</td>
+            <td>Veroney</td>
             <td>Member</td>
           </tr>
           <tr>
@@ -181,49 +187,49 @@
             <td>Member</td>
           </tr>
           <tr>
-            <td>19</td>
+            <td>20</td>
             <td>OXOMrMundu</td>
             <td>0133187886</td>
             <td>Kemo</td>
             <td>Member</td>
           </tr>
           <tr>
-            <td>20</td>
+            <td>21</td>
             <td>OXOFrogman05</td>
             <td>0148639870</td>
             <td>Frogman</td>
             <td>Member</td>
           </tr>
           <tr>
-            <td>21</td>
+            <td>22</td>
             <td>OXOChaPlin</td>
             <td>0128692100</td>
             <td>Bonong</td>
             <td>Member</td>
           </tr>
           <tr>
-            <td>22</td>
+            <td>23</td>
             <td>OXOCinkelepu</td>
             <td>0168465628</td>
             <td>Kevin</td>
             <td>Member</td>
           </tr>
           <tr>
-            <td>23</td>
+            <td>24</td>
             <td>OXOLantugih</td>
             <td>0193139591</td>
             <td>Pel</td>
             <td>Member</td>
           </tr>
           <tr>
-            <td>24</td>
+            <td>25</td>
             <td>OXOChak</td>
             <td>0198017619</td>
             <td>Pel</td>
             <td>Member</td>
           </tr>
           <tr>
-            <td>24</td>
+            <td>26</td>
             <td>OXOIsaacRussel</td>
             <td>0174466550</td>
             <td>Isaac</td>
@@ -232,10 +238,85 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section hidden>
       <p>
         <button id="btnEditInfo" class="button-primary-outlined button-round">Edit Info</button>
       </p>
+      <p>
+        <button id="btnAdd" class="button-primary-outlined button-round">Add</button>
+      </p>
+    </section>
+    <section>
+      <div class="modal-mask" id="addModal" hidden>
+        <div class="modal">
+          <div class="modal-head">
+            <p class="modal-title">Add member</p>
+          </div>
+          <div class="modal-body">
+            <div class="form-control">
+              <label>IGN</label>
+              <input id="txtIgn" type="text" placeholder="PUBG name">
+            </div>
+            <div class="form-control">
+              <label>HP No</label>
+              <input id="txtHpNo" type="text" placeholder="Hp no">
+            </div>
+            <div class="form-control">
+              <label>Name</label>
+              <input id="txtName" type="text" placeholder="Name">
+            </div>
+            <div class="form-control">
+              <label>Role</label>
+              <select id="slctRole">
+                <option>Leader</option>
+                <option>Co-Leader</option>
+                <option>Elite</option>
+                <option selected="selected">Member</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="form-control-group">
+              <div class="form-control">
+                <button id="btnSave" class="button-primary">Save</button>
+              </div>
+              <div class="form-control">
+                <button id="btnCancel" class="button-primary">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="tabs">
+        <ul class="tabs">
+          <li><a class="tab" href="#tabs-1">Ketahian apa ini?</a></li>
+          <li><a class="tab" href="#tabs-2">Peraturan</a></li>
+        </ul>
+        <div id="tabs-1">
+          Ini page untuk clan members PUBG Mobile OXO untuk mengetahui ahli2 ingame melalui no whatsapp yang ada dalam
+          whatsapp group OXO
+        </div>
+        <div id="tabs-2">
+          Peraturan disediakan dalam group ni, untuk menjamin keseronokan bermain PUBG tanpa ada unsur politik dan najis
+          najis durjana
+          <p><b>MESTI KAU BUAT:</b></p>
+          <p>
+            <ul>
+              <li>TUKAR NAMA. pastikan nama depan anda ada OXO. contohnya : ign: mrMorMoor -> OXOmrMorMoor</li>
+            </ul>
+          </p>
+
+          <p><b>DILARANG:</b></p>
+          <p>
+            <ul>
+              <li>POK SILAP! bini2 girlfriend2 orang smua dalam ni. mo cari jodoh p main tinder anjir!</li>
+              <li>HATI TISU! bukan kena reject ingame request sikit mo leave group, mo men PM2 sna dog</li>
+            </ul>
+          </p>
+        </div>
+      </div>
     </section>
   </div>
 
