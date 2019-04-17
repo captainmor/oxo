@@ -22,9 +22,12 @@
   <!-- Mustard UI -->
   <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
 </head>
 
 <body>
@@ -34,24 +37,65 @@
         <a href="#">OXO</a>
       </div>
       <ul class="nav-links">
-        <li><a class="active" href="#">Members</a></li>
-        <li><a href="#">Crap</a></li>
+        <li><a class="active" href="#">Home</a></li>
+        </p>
       </ul>
     </div>
   </nav>
   <div class="container">
     <header>
-      <h1 class="title">OXO PUBG MOBILE CLAN</h1>
+      <!-- <h1 class="title">OXO PUBG MOBILE CLAN</h1> -->
+      <h1 class="title">OXO STDD MOBILE ZITI</h1>
       <h2 class="subtitle">ON X ON</h2>
       <p class="disclaimer">established January 2019.</p>
       <!-- <button class="get-started button button-primary button-large">Call to Action</button> -->
-
       <a class="scroll-down" href="#"></a>
     </header>
-
+    <section class="section" id="signedInSection" hidden>
+      <div class="float-right">
+        <div class="col col-sm-2 align-center">
+          <p id="displayName">User</p>
+        </div>
+        <div class="col col-sm-2">
+          <button id="btnLogOut" class="button-primary-text">Log out</button>
+        </div>
+      </div>
+    </section>
     <section>
+      <div id="tabs">
+        <ul class="tabs">
+          <li><a class="tab" href="#tabs-1">Ketahian apa ini?</a></li>
+          <li><a class="tab" href="#tabs-2">Peraturan</a></li>
+        </ul>
+        <div id="tabs-1">
+          Ini page untuk clan members PUBG Mobile OXO untuk mengetahui ahli2 ingame melalui no whatsapp yang ada
+          dalam
+          whatsapp group OXO
+        </div>
+        <div id="tabs-2">
+          Peraturan disediakan dalam group ni, untuk menjamin keseronokan bermain PUBG tanpa ada unsur politik
+          dan najis
+          najis durjana
+          <p><b>MESTI KAU BUAT:</b></p>
+          <p>
+            <ul>
+              <li>TUKAR NAMA. pastikan nama depan anda ada OXO. contohnya : ign: mrMorMoor -> OXOmrMorMoor</li>
+            </ul>
+          </p>
+
+          <p><b>DILARANG:</b></p>
+          <p>
+            <ul>
+              <li>POK SILAP! bini2 girlfriend2 orang smua dalam ni. mo cari jodoh p main tinder anjir!</li>
+              <li>HATI TISU! bukan kena reject ingame request sikit mo leave group, mo men PM2 sna dog</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-secondary">
       <h1 class="h2">List of Members</h1>
-      <table>
+      <table id="memberListTable">
         <thead>
           <tr>
             <th>No</th>
@@ -61,199 +105,21 @@
             <th>Role</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>OxoMrMorMoor</td>
-            <td>0128340091</td>
-            <td>Moru</td>
-            <td>Leader</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>OXO max</td>
-            <td>0133223244</td>
-            <td>Max</td>
-            <td>Co-Leader</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>OXOmrAping</td>
-            <td>0193498929</td>
-            <td>Aping</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>OXOWini9430</td>
-            <td>01156610943</td>
-            <td>Wini</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>OxomaNz</td>
-            <td>0198973303</td>
-            <td>Man</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>OxoNixoholic</td>
-            <td>0109315457</td>
-            <td>Cang</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>OXOMONARCO</td>
-            <td>0198136723</td>
-            <td>Hafiz</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>OXOema</td>
-            <td>0198970087</td>
-            <td>Ema</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>OXOJayde</td>
-            <td>0128113774</td>
-            <td>BB</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>OXOPnimbaKToLi</td>
-            <td>0168113653</td>
-            <td>Puma</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Veroneyy</td>
-            <td>0195365215</td>
-            <td>Veroney</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>OXOblackflag87</td>
-            <td>0198010487</td>
-            <td>Blackflag</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>OXOCikenGg</td>
-            <td>0148878920</td>
-            <td>Cikon</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>OXOjoebuzant</td>
-            <td>0138837207</td>
-            <td>Chris</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>Waqas</td>
-            <td>01129967932</td>
-            <td>Wawa</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>OXOTobungKiro</td>
-            <td>0168430212</td>
-            <td>Charles</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>17</td>
-            <td>OXOMeGray</td>
-            <td>0165880466</td>
-            <td>Megray</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>18</td>
-            <td>AdrianHilton14</td>
-            <td>0163613571</td>
-            <td>Adrian</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>19</td>
-            <td>OXOBadVenus</td>
-            <td>0198081008</td>
-            <td>Megga</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>OXOMrMundu</td>
-            <td>0133187886</td>
-            <td>Kemo</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>21</td>
-            <td>OXOFrogman05</td>
-            <td>0148639870</td>
-            <td>Frogman</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>22</td>
-            <td>OXOChaPlin</td>
-            <td>0128692100</td>
-            <td>Bonong</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>23</td>
-            <td>OXOCinkelepu</td>
-            <td>0168465628</td>
-            <td>Kevin</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>24</td>
-            <td>OXOLantugih</td>
-            <td>0193139591</td>
-            <td>Pel</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>25</td>
-            <td>OXOChak</td>
-            <td>0198017619</td>
-            <td>Pel</td>
-            <td>Member</td>
-          </tr>
-          <tr>
-            <td>26</td>
-            <td>OXOIsaacRussel</td>
-            <td>0174466550</td>
-            <td>Isaac</td>
-            <td>Member</td>
-          </tr>
-        </tbody>
+        <tbody></tbody>
       </table>
     </section>
-    <section hidden>
-      <p>
-        <button id="btnEditInfo" class="button-primary-outlined button-round">Edit Info</button>
-      </p>
-      <p>
-        <button id="btnAdd" class="button-primary-outlined button-round">Add</button>
-      </p>
+    <section>
+
+    </section>
+    <section>
+      <div class="form-control-group">
+        <div class="form-control">
+          <button id="btnEditInfo" class="button-primary-outlined button-round" hidden>Edit Info</button>
+        </div>
+        <div class="form-control">
+          <button id="btnAdd" class="button-primary-outlined button-round">Add</button>
+        </div>
+      </div>
     </section>
     <section>
       <div class="modal-mask" id="addModal" hidden>
@@ -298,32 +164,28 @@
       </div>
     </section>
     <section>
-      <div id="tabs">
-        <ul class="tabs">
-          <li><a class="tab" href="#tabs-1">Ketahian apa ini?</a></li>
-          <li><a class="tab" href="#tabs-2">Peraturan</a></li>
-        </ul>
-        <div id="tabs-1">
-          Ini page untuk clan members PUBG Mobile OXO untuk mengetahui ahli2 ingame melalui no whatsapp yang ada dalam
-          whatsapp group OXO
-        </div>
-        <div id="tabs-2">
-          Peraturan disediakan dalam group ni, untuk menjamin keseronokan bermain PUBG tanpa ada unsur politik dan najis
-          najis durjana
-          <p><b>MESTI KAU BUAT:</b></p>
-          <p>
-            <ul>
-              <li>TUKAR NAMA. pastikan nama depan anda ada OXO. contohnya : ign: mrMorMoor -> OXOmrMorMoor</li>
-            </ul>
-          </p>
-
-          <p><b>DILARANG:</b></p>
-          <p>
-            <ul>
-              <li>POK SILAP! bini2 girlfriend2 orang smua dalam ni. mo cari jodoh p main tinder anjir!</li>
-              <li>HATI TISU! bukan kena reject ingame request sikit mo leave group, mo men PM2 sna dog</li>
-            </ul>
-          </p>
+      <div class="modal-mask" id="verifyPhoneModal" hidden>
+        <div class="modal">
+          <div class="modal-head">
+            <p class="modal-title">Verify</p>
+          </div>
+          <div class="modal-body">
+            <div id="firebaseui-container"></div>
+            <div id="updateDisplayName" hidden>
+              <p>weinaa jir,siapa kau ni. Kasi tau dlu nama mu jir</p>
+              <br>
+              <div class="form-control">
+                <label>Display Name</label>
+                <input id="txtDisplayName" type="text" placeholder="display name">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="form-control">
+              <button id="btnClose" class="button-primary">Close</button>
+              <button id="btnUpdateDispName" class="button-primary" hidden>Update</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
